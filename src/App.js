@@ -1,23 +1,73 @@
-import logo from './logo.svg';
 import './App.css';
-
+import React, {useState,useEffect} from 'react'
+import './Style.css';
+import Blue from './Blue';
+import Second from './Second';
+import Third from './Third';
+import Fourth from './Fourth';
+import Fiveth from './Fiveth';
+import Sixth from './Sixth';
+import Responsive from './Responsive';
+import useWindowDimensions from "./useWindowDimensions";
+import ResInsurnace from './ResInsurnace';
+import Resbikecarheart from './Resbikecarheart';
+import Resbanner from './Resbanner';
+import ResFirst from './ResFirst';
+import ResSecond from './ResSecond';
+import ResThird from './ResThird';
+import ResFourth from './ResFourth';
+import ResFivth from './ResFivth';
+import ResSixth from './ResSixth';
+import Resseventh from './Resseventh';
+ 
 function App() {
+  const { width } = useWindowDimensions();
+
+  const [mobileWidth, setMobilewidth] = useState(false);
+  const [webWidth, setWebWidth] = useState(false);
+
+
+  useEffect(() => {
+    if (width < 700) {
+      setMobilewidth(true);
+      setWebWidth(false);
+    } else {
+      setMobilewidth(false);
+      setWebWidth(true);
+    }
+  }, [width]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+{webWidth && (
+  <div>
+     <Blue/>
+     <Second/>
+     <Third/>
+     <Fourth/>
+     <Fiveth/>
+     <Sixth/>
+     </div>
+     )}
+     
+    {mobileWidth && (
+      <div>
+     <Responsive/>
+     <ResInsurnace/>
+     <Resbikecarheart/>
+     <Resbanner/>
+     <ResFirst/>
+     <ResSecond/>
+     <br/>
+     <ResThird/>
+        <br/>  <br/>  <br/>
+    <ResFourth/>
+    <br/>  <br/>
+    <ResFivth/>
+{/* <ResSixth/> */}
+<br/>  <br/>
+<Resseventh/>
+     </div>
+     ) }
     </div>
   );
 }
