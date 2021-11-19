@@ -1,5 +1,5 @@
 <div>
-  <p> Not Completed / Cloning Fully</p>
+  <p> Not Fully Completed / Cloning</p>
 </div>
 
 <div> 
