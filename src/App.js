@@ -19,6 +19,9 @@ import ResFourth from './ResFourth';
 import ResFivth from './ResFivth';
 import ResSixth from './ResSixth';
 import Resseventh from './Resseventh';
+import "@coreui/coreui/dist/css/coreui.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Hot } from './Hot';
  
 function App() {
   const { width } = useWindowDimensions();
@@ -46,6 +49,7 @@ function App() {
      <Fourth/>
      <Fiveth/>
      <Sixth/>
+     <Hot/>
      </div>
      )}
      
@@ -63,7 +67,7 @@ function App() {
     <ResFourth/>
     <br/>  <br/>
     <ResFivth/>
-{/* <ResSixth/> */}
+<ResSixth/>
 <br/>  <br/>
 <Resseventh/>
      </div>
