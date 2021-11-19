@@ -163,7 +163,6 @@ function Fiveth() {
             </li>
             <li className="sc-imABML gqCUog">
               <a
-                target="_blank"
                 href="https://careers.acko.com/"
                 className="sc-cjHlYL cEbJzd"
               >

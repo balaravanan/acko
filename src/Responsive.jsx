@@ -51,15 +51,15 @@ function Responsive() {
       <CModalBody>
       <div>
         <div>
-        <img height="26px" width="26px" src="https://myaccount.ackoassets.com/static/images/header-icons/raise-a-claim-v2.svg" className="sc-gAmQfK jqNPIq"/>
+        <img height="26px" width="26px" alt="" src="https://myaccount.ackoassets.com/static/images/header-icons/raise-a-claim-v2.svg" className="sc-gAmQfK jqNPIq"/>
         Raise a claim
         </div>
         <div>
-        <img height="26px" width="26px" src="https://myaccount.ackoassets.com/static/images/header-icons/renew-policy-v2.svg" className="sc-gAmQfK jqNPIq"/>
+        <img height="26px" width="26px" alt="" src="https://myaccount.ackoassets.com/static/images/header-icons/renew-policy-v2.svg" className="sc-gAmQfK jqNPIq"/>
         Renew policy
         </div>
         <div>
-        <img height="26px" width="26px" src="https://myaccount.ackoassets.com/static/images/header-icons/help-icon-v2.svg" className="sc-gAmQfK jqNPIq"/>
+        <img height="26px" width="26px" alt="" src="https://myaccount.ackoassets.com/static/images/header-icons/help-icon-v2.svg" className="sc-gAmQfK jqNPIq"/>
         Help
         </div>
         </div>
